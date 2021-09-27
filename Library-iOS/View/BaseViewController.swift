@@ -25,6 +25,8 @@ class BaseViewController: UIViewController {
     func initContentView() {
         // 註冊 Cell
         self.myTableView.register(UITableViewCell.self, forCellReuseIdentifier: self.tableViewCellIdentifier)
+        
+        self.title = "Library"
     }
 }
 
@@ -36,8 +38,7 @@ extension BaseViewController: UITableViewDelegate {
             case "ImageLoader":
                 let controller = UIStoryboard(name: "ImagePicker", bundle: nil)
                     .instantiateViewController(withIdentifier: "ImagePickerViewController")
-                controller.modalPresentationStyle = .fullScreen
-                present(controller, animated: true, completion: nil)
+                self.navigationController?.pushViewController(controller, animated: true)
                 break
                 
             default:
@@ -54,13 +55,15 @@ extension BaseViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.tableViewCellIdentifier)!
         
-        var content = cell.defaultContentConfiguration()
-        content.text = self.itemList[indexPath.row]
-        
-//        content.image = UIImage(named: "test.png")
-//        content.secondaryText = "second Text"
-
-        cell.contentConfiguration = content
+        if #available(iOS 15.0, *) {
+            var content = cell.defaultContentConfiguration()
+            content.text = self.itemList[indexPath.row]
+    //        content.image = UIImage(named: "test.png")
+    //        content.secondaryText = "second Text"
+            cell.contentConfiguration = content
+        } else {
+            cell.textLabel?.text = self.itemList[indexPath.row]
+        }
         
         return cell
     }

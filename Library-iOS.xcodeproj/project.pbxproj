@@ -15,6 +15,8 @@
 		38204DB02701ABBF006A7742 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DAF2701ABBF006A7742 /* BaseViewController.swift */; };
 		38204DB22701B081006A7742 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38204DB12701B081006A7742 /* ImagePicker.storyboard */; };
 		38204DB42701B095006A7742 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DB32701B095006A7742 /* ImagePickerViewController.swift */; };
+		38204DB62701C958006A7742 /* BaseView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38204DB52701C958006A7742 /* BaseView.storyboard */; };
+		38204DB82701C97C006A7742 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DB72701C97C006A7742 /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		38204DAF2701ABBF006A7742 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		38204DB12701B081006A7742 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
 		38204DB32701B095006A7742 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		38204DB52701C958006A7742 /* BaseView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseView.storyboard; sourceTree = "<group>"; };
+		38204DB72701C97C006A7742 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				38204DAF2701ABBF006A7742 /* BaseViewController.swift */,
 				38204DB32701B095006A7742 /* ImagePickerViewController.swift */,
+				38204DB72701C97C006A7742 /* BaseNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 				38204D9D2701A959006A7742 /* Main.storyboard */,
 				38204DA22701A95B006A7742 /* LaunchScreen.storyboard */,
 				38204DB12701B081006A7742 /* ImagePicker.storyboard */,
+				38204DB52701C958006A7742 /* BaseView.storyboard */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 				38204DA42701A95B006A7742 /* LaunchScreen.storyboard in Resources */,
 				38204DA12701A95B006A7742 /* Assets.xcassets in Resources */,
 				38204DB22701B081006A7742 /* ImagePicker.storyboard in Resources */,
+				38204DB62701C958006A7742 /* BaseView.storyboard in Resources */,
 				38204D9F2701A959006A7742 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +179,7 @@
 				38204D982701A959006A7742 /* AppDelegate.swift in Sources */,
 				38204D9A2701A959006A7742 /* SceneDelegate.swift in Sources */,
 				38204DB42701B095006A7742 /* ImagePickerViewController.swift in Sources */,
+				38204DB82701C97C006A7742 /* BaseNavigationController.swift in Sources */,
 				38204DB02701ABBF006A7742 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

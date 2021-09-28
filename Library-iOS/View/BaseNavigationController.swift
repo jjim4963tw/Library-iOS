@@ -19,7 +19,7 @@ class BaseNavigationController: UINavigationController {
         
         // set root ViewController
         let rootViewController = UIStoryboard(name: "BaseView", bundle: nil)
-            .instantiateViewController(withIdentifier: "BaseViewController") as! BaseViewController
+            .instantiateViewController(withIdentifier: "BaseViewController") as! IndexViewController
         self.setViewControllers([rootViewController], animated: true)
         
         // set NavigationBar Style

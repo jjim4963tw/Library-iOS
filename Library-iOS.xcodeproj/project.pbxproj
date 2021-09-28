@@ -21,6 +21,8 @@
 		38204DC32702C05B006A7742 /* AlertControllerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DC22702C05B006A7742 /* AlertControllerUtility.swift */; };
 		38204DC62702CAB3006A7742 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DC52702CAB3006A7742 /* UIApplication.swift */; };
 		38204DCC2702E36E006A7742 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38204DCE2702E36E006A7742 /* Localizable.strings */; };
+		38204DD127030030006A7742 /* FilePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38204DD027030030006A7742 /* FilePicker.storyboard */; };
+		38204DD32703003F006A7742 /* FilePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DD22703003F006A7742 /* FilePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		38204DC82702E30C006A7742 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		38204DCD2702E36E006A7742 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38204DCF2702E38A006A7742 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		38204DD027030030006A7742 /* FilePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilePicker.storyboard; sourceTree = "<group>"; };
+		38204DD22703003F006A7742 /* FilePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				38204DB72701C97C006A7742 /* BaseNavigationController.swift */,
 				38204DBB2702B12C006A7742 /* BaseViewController.swift */,
 				38204DAF2701ABBF006A7742 /* IndexViewController.swift */,
+				38204DD22703003F006A7742 /* FilePickerViewController.swift */,
 				38204DBD2702B810006A7742 /* MediaPickerViewController.swift */,
 			);
 			path = View;
@@ -114,6 +119,7 @@
 				38204DB12701B081006A7742 /* ImagePicker.storyboard */,
 				38204DA22701A95B006A7742 /* LaunchScreen.storyboard */,
 				38204D9D2701A959006A7742 /* Main.storyboard */,
+				38204DD027030030006A7742 /* FilePicker.storyboard */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38204DA42701A95B006A7742 /* LaunchScreen.storyboard in Resources */,
+				38204DD127030030006A7742 /* FilePicker.storyboard in Resources */,
 				38204DA12701A95B006A7742 /* Assets.xcassets in Resources */,
 				38204DCC2702E36E006A7742 /* Localizable.strings in Resources */,
 				38204DB22701B081006A7742 /* ImagePicker.storyboard in Resources */,
@@ -218,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38204DC32702C05B006A7742 /* AlertControllerUtility.swift in Sources */,
+				38204DD32703003F006A7742 /* FilePickerViewController.swift in Sources */,
 				38204D982701A959006A7742 /* AppDelegate.swift in Sources */,
 				38204DBE2702B811006A7742 /* MediaPickerViewController.swift in Sources */,
 				38204D9A2701A959006A7742 /* SceneDelegate.swift in Sources */,

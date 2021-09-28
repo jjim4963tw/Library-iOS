@@ -22,6 +22,7 @@ class MediaPickerViewController: BaseViewController {
     override func initNavigationBar() {
         let createButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(self.createImageItemsFunction))
         
+        self.title = "ImageLoader"
         self.navigationItem.rightBarButtonItems = [createButton]
     }
     

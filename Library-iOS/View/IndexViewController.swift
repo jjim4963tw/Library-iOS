@@ -18,6 +18,7 @@ class IndexViewController: BaseViewController {
         super.viewDidLoad()
         
         itemList.append("ImageLoader")
+        itemList.append("FilePicker")
     }
     
     override func initContentView() {
@@ -34,11 +35,11 @@ extension IndexViewController: UITableViewDelegate {
         
         switch (title) {
             case "ImageLoader":
-                let targetStoryBoard = UIStoryboard(name: "ImagePicker", bundle: nil)
-                let viewController = targetStoryBoard.instantiateViewController(withIdentifier: "MediaPickerViewController")
-                self.navigationController?.pushViewController(viewController, animated: true)
+                self.goPageFunction(storyboardName: "ImagePicker", storyboardID: "MediaPickerViewController")
                 break
-                
+            case "FilePicker":
+                self.goPageFunction(storyboardName: "FilePicker", storyboardID: "FilePickerViewController")
+                break
             default:
                 break
         }

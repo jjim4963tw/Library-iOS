@@ -24,4 +24,10 @@ class BaseViewController: UIViewController {
     func initNavigationBar() {
         
     }
+    
+    func goPageFunction(storyboardName: String, storyboardID: String) {
+        let targetStoryBoard = UIStoryboard(name: storyboardName, bundle: nil)
+        let viewController = targetStoryBoard.instantiateViewController(withIdentifier: storyboardID)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

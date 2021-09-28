@@ -1,5 +1,5 @@
 //
-//  ImagePickerViewController.swift
+//  MediaPickerViewController.swift
 //  Library-iOS
 //
 //  Created by jim on 2021/9/27.
@@ -65,7 +65,10 @@ class MediaPickerViewController: BaseViewController {
     }
     
     func showNotPermissionAlertFunction() {
-        AlertControllerUtility.shareInstance().showAlertController(title: "Need Photo Permission", message: "Using this app need photo permission, do you want to turn on it?", style: .alert, needSuccessButton: true, needCancelButton: false, successTitle: "Go Setting", successhandler: { action in
+        AlertControllerUtility.shareInstance().showAlertController(title: NSLocalizedString("alert_not_permission_title", comment: ""),
+                                                                   message: NSLocalizedString("alert_not_permission_message", comment: ""), style: .alert,
+                                                                   needSuccessButton: true, needCancelButton: false,
+                                                                   successTitle: NSLocalizedString("alert_go_setting_button_text", comment: ""), successhandler: { action in
             guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
                 return
             }

@@ -13,6 +13,8 @@ import PhotosUI
  */
 class MediaPickerViewController: BaseViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,8 +94,7 @@ extension MediaPickerViewController: PHPickerViewControllerDelegate {
                result.itemProvider.loadObject(ofClass: UIImage.self, completionHandler: { (object, error) in
                   if let image = object as? UIImage {
                      DispatchQueue.main.async {
-                        // Use UIImage
-                        print("Selected image: \(image)")
+                         self.imageView.image = image
                      }
                   }
                })

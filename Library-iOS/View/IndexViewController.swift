@@ -19,6 +19,7 @@ class IndexViewController: BaseViewController {
         
         itemList.append("ImageLoader")
         itemList.append("FilePicker")
+        itemList.append("SwitchGridorList")
     }
     
     override func initContentView() {
@@ -39,6 +40,9 @@ extension IndexViewController: UITableViewDelegate {
                 break
             case "FilePicker":
                 self.goPageFunction(storyboardName: "FilePicker", storyboardID: "FilePickerViewController")
+                break
+            case "SwitchGridorList":
+                self.goPageFunction(storyboardName: "GridorListView", storyboardID: "SwitchGridorListViewController")
                 break
             default:
                 break

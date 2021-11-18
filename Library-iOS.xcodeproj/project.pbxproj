@@ -24,6 +24,14 @@
 		38204DCC2702E36E006A7742 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38204DCE2702E36E006A7742 /* Localizable.strings */; };
 		38204DD127030030006A7742 /* FilePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38204DD027030030006A7742 /* FilePicker.storyboard */; };
 		38204DD32703003F006A7742 /* FilePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204DD22703003F006A7742 /* FilePickerViewController.swift */; };
+		38C9607F274606D4000607D8 /* SwitchGridorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C9607E274606D4000607D8 /* SwitchGridorListViewController.swift */; };
+		38C9608127460716000607D8 /* GridorListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C9608027460716000607D8 /* GridorListView.storyboard */; };
+		38C9608B27460890000607D8 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C9608927460890000607D8 /* ListCollectionViewCell.swift */; };
+		38C9608C27460890000607D8 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C9608A27460890000607D8 /* ListCollectionViewCell.xib */; };
+		38C9608F2746089C000607D8 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C9608D2746089C000607D8 /* GridCollectionViewCell.swift */; };
+		38C960902746089C000607D8 /* GridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C9608E2746089C000607D8 /* GridCollectionViewCell.xib */; };
+		38C9609327460C29000607D8 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C9609127460C29000607D8 /* HeaderCollectionViewCell.swift */; };
+		38C9609427460C29000607D8 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C9609227460C29000607D8 /* HeaderCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,12 +51,18 @@
 		38204DBD2702B810006A7742 /* MediaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerViewController.swift; sourceTree = "<group>"; };
 		38204DC22702C05B006A7742 /* AlertControllerUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerUtility.swift; sourceTree = "<group>"; };
 		38204DC52702CAB3006A7742 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		38204DC72702E30C006A7742 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		38204DC82702E30C006A7742 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		38204DCD2702E36E006A7742 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38204DCF2702E38A006A7742 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		38204DD027030030006A7742 /* FilePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilePicker.storyboard; sourceTree = "<group>"; };
 		38204DD22703003F006A7742 /* FilePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerViewController.swift; sourceTree = "<group>"; };
+		38C9607E274606D4000607D8 /* SwitchGridorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchGridorListViewController.swift; sourceTree = "<group>"; };
+		38C9608027460716000607D8 /* GridorListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GridorListView.storyboard; sourceTree = "<group>"; };
+		38C9608927460890000607D8 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C9608A27460890000607D8 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		38C9608D2746089C000607D8 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C9608E2746089C000607D8 /* GridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridCollectionViewCell.xib; sourceTree = "<group>"; };
+		38C9609127460C29000607D8 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		38C9609227460C29000607D8 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +109,13 @@
 		38204DAC2701AA81006A7742 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				38C960822746074E000607D8 /* Component */,
 				38204DB72701C97C006A7742 /* BaseNavigationController.swift */,
 				38204DBB2702B12C006A7742 /* BaseViewController.swift */,
 				38204DAF2701ABBF006A7742 /* IndexViewController.swift */,
 				38204DD22703003F006A7742 /* FilePickerViewController.swift */,
 				38204DBD2702B810006A7742 /* MediaPickerViewController.swift */,
+				38C9607E274606D4000607D8 /* SwitchGridorListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,10 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				38204DB52701C958006A7742 /* BaseView.storyboard */,
+				38204DD027030030006A7742 /* FilePicker.storyboard */,
+				38C9608027460716000607D8 /* GridorListView.storyboard */,
 				38204DB12701B081006A7742 /* ImagePicker.storyboard */,
 				38204DA22701A95B006A7742 /* LaunchScreen.storyboard */,
 				38204D9D2701A959006A7742 /* Main.storyboard */,
-				38204DD027030030006A7742 /* FilePicker.storyboard */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -149,6 +166,19 @@
 				38204DCE2702E36E006A7742 /* Localizable.strings */,
 			);
 			path = Language;
+			sourceTree = "<group>";
+		};
+		38C960822746074E000607D8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				38C9608927460890000607D8 /* ListCollectionViewCell.swift */,
+				38C9608A27460890000607D8 /* ListCollectionViewCell.xib */,
+				38C9608D2746089C000607D8 /* GridCollectionViewCell.swift */,
+				38C9608E2746089C000607D8 /* GridCollectionViewCell.xib */,
+				38C9609127460C29000607D8 /* HeaderCollectionViewCell.swift */,
+				38C9609227460C29000607D8 /* HeaderCollectionViewCell.xib */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,12 +240,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C9608127460716000607D8 /* GridorListView.storyboard in Resources */,
 				38204DA42701A95B006A7742 /* LaunchScreen.storyboard in Resources */,
 				38204DD127030030006A7742 /* FilePicker.storyboard in Resources */,
 				38204DA12701A95B006A7742 /* Assets.xcassets in Resources */,
 				38204DCC2702E36E006A7742 /* Localizable.strings in Resources */,
+				38C9608C27460890000607D8 /* ListCollectionViewCell.xib in Resources */,
 				38204DB22701B081006A7742 /* ImagePicker.storyboard in Resources */,
 				38204DB62701C958006A7742 /* BaseView.storyboard in Resources */,
+				38C960902746089C000607D8 /* GridCollectionViewCell.xib in Resources */,
+				38C9609427460C29000607D8 /* HeaderCollectionViewCell.xib in Resources */,
 				38204D9F2701A959006A7742 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,12 +264,16 @@
 				38204DC32702C05B006A7742 /* AlertControllerUtility.swift in Sources */,
 				38204DD32703003F006A7742 /* FilePickerViewController.swift in Sources */,
 				38204D982701A959006A7742 /* AppDelegate.swift in Sources */,
+				38C9609327460C29000607D8 /* HeaderCollectionViewCell.swift in Sources */,
 				381F29B62706F9DB0074B182 /* Bundle.swift in Sources */,
 				38204DBE2702B811006A7742 /* MediaPickerViewController.swift in Sources */,
 				38204D9A2701A959006A7742 /* SceneDelegate.swift in Sources */,
+				38C9608B27460890000607D8 /* ListCollectionViewCell.swift in Sources */,
 				38204DB82701C97C006A7742 /* BaseNavigationController.swift in Sources */,
+				38C9608F2746089C000607D8 /* GridCollectionViewCell.swift in Sources */,
 				38204DB02701ABBF006A7742 /* IndexViewController.swift in Sources */,
 				38204DBC2702B12C006A7742 /* BaseViewController.swift in Sources */,
+				38C9607F274606D4000607D8 /* SwitchGridorListViewController.swift in Sources */,
 				38204DC62702CAB3006A7742 /* UIApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +285,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				38204D9E2701A959006A7742 /* Base */,
-				38204DC82702E30C006A7742 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,7 +293,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				38204DA32701A95B006A7742 /* Base */,
-				38204DC72702E30C006A7742 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

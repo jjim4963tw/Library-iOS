@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381F29B62706F9DB0074B182 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F29B52706F9DB0074B182 /* Bundle.swift */; };
 		38204D982701A959006A7742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204D972701A959006A7742 /* AppDelegate.swift */; };
 		38204D9A2701A959006A7742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38204D992701A959006A7742 /* SceneDelegate.swift */; };
 		38204D9F2701A959006A7742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38204D9D2701A959006A7742 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381F29B52706F9DB0074B182 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		38204D942701A959006A7742 /* Library-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38204D972701A959006A7742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38204D992701A959006A7742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				38204DC52702CAB3006A7742 /* UIApplication.swift */,
+				381F29B52706F9DB0074B182 /* Bundle.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				38204DC32702C05B006A7742 /* AlertControllerUtility.swift in Sources */,
 				38204DD32703003F006A7742 /* FilePickerViewController.swift in Sources */,
 				38204D982701A959006A7742 /* AppDelegate.swift in Sources */,
+				381F29B62706F9DB0074B182 /* Bundle.swift in Sources */,
 				38204DBE2702B811006A7742 /* MediaPickerViewController.swift in Sources */,
 				38204D9A2701A959006A7742 /* SceneDelegate.swift in Sources */,
 				38204DB82701C97C006A7742 /* BaseNavigationController.swift in Sources */,

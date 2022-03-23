@@ -40,6 +40,9 @@
 		89634B9C27E9CE7000914495 /* EncryptionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9B27E9CE7000914495 /* EncryptionUtility.swift */; };
 		89634B9E27EABFE700914495 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9D27EABFE700914495 /* Date.swift */; };
 		89634BA027EAC01B00914495 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9F27EAC01B00914495 /* Color.swift */; };
+		89634BA527EACAC300914495 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BA427EACAC300914495 /* UIImage.swift */; };
+		89634BA727EACBBC00914495 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BA627EACBBC00914495 /* UIView.swift */; };
+		89634BA927EACD5900914495 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BA827EACD5900914495 /* UINavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		89634B9B27E9CE7000914495 /* EncryptionUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionUtility.swift; sourceTree = "<group>"; };
 		89634B9D27EABFE700914495 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		89634B9F27EAC01B00914495 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		89634BA427EACAC300914495 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		89634BA627EACBBC00914495 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		89634BA827EACD5900914495 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,9 @@
 				89634B9D27EABFE700914495 /* Date.swift */,
 				89634B9927E9CBDA00914495 /* String.swift */,
 				38204DC52702CAB3006A7742 /* UIApplication.swift */,
+				89634BA427EACAC300914495 /* UIImage.swift */,
+				89634BA627EACBBC00914495 /* UIView.swift */,
+				89634BA827EACD5900914495 /* UINavigationBar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -301,10 +310,12 @@
 			files = (
 				38204DC32702C05B006A7742 /* AlertControllerUtility.swift in Sources */,
 				38204DD32703003F006A7742 /* FilePickerViewController.swift in Sources */,
+				89634BA727EACBBC00914495 /* UIView.swift in Sources */,
 				38204D982701A959006A7742 /* AppDelegate.swift in Sources */,
 				38C9609327460C29000607D8 /* HeaderCollectionViewCell.swift in Sources */,
 				381F29B62706F9DB0074B182 /* Bundle.swift in Sources */,
 				89634B9827E9C8C100914495 /* Array.swift in Sources */,
+				89634BA527EACAC300914495 /* UIImage.swift in Sources */,
 				38204DBE2702B811006A7742 /* MediaPickerViewController.swift in Sources */,
 				38204D9A2701A959006A7742 /* SceneDelegate.swift in Sources */,
 				38C9608B27460890000607D8 /* ListCollectionViewCell.swift in Sources */,
@@ -314,6 +325,7 @@
 				38204DB02701ABBF006A7742 /* IndexViewController.swift in Sources */,
 				89634BA027EAC01B00914495 /* Color.swift in Sources */,
 				38204DBC2702B12C006A7742 /* BaseViewController.swift in Sources */,
+				89634BA927EACD5900914495 /* UINavigationBar.swift in Sources */,
 				89634B9A27E9CBDA00914495 /* String.swift in Sources */,
 				89634B9C27E9CE7000914495 /* EncryptionUtility.swift in Sources */,
 				89634B9E27EABFE700914495 /* Date.swift in Sources */,

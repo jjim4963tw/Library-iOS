@@ -23,16 +23,6 @@ class BaseNavigationController: UINavigationController {
         self.setViewControllers([rootViewController], animated: true)
         
         // set NavigationBar Style
-        if #available(iOS 15.0, *) {
-            let appearence = UINavigationBarAppearance()
-            appearence.configureWithOpaqueBackground()
-            appearence.backgroundColor = .blue
-            appearence.titleTextAttributes = [.foregroundColor: UIColor.white]
-            self.navigationBar.standardAppearance = appearence
-            self.navigationBar.scrollEdgeAppearance = appearence
-        } else {
-            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-            self.navigationController?.navigationBar.barTintColor = .blue
-        }
+        self.navigationBar.setNavigationBarTheme()
     }
 }

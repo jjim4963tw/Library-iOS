@@ -38,6 +38,8 @@
 		89634B9827E9C8C100914495 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9727E9C8C100914495 /* Array.swift */; };
 		89634B9A27E9CBDA00914495 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9927E9CBDA00914495 /* String.swift */; };
 		89634B9C27E9CE7000914495 /* EncryptionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9B27E9CE7000914495 /* EncryptionUtility.swift */; };
+		89634B9E27EABFE700914495 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9D27EABFE700914495 /* Date.swift */; };
+		89634BA027EAC01B00914495 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634B9F27EAC01B00914495 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		89634B9727E9C8C100914495 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		89634B9927E9CBDA00914495 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		89634B9B27E9CE7000914495 /* EncryptionUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionUtility.swift; sourceTree = "<group>"; };
+		89634B9D27EABFE700914495 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		89634B9F27EAC01B00914495 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			children = (
 				89634B9727E9C8C100914495 /* Array.swift */,
 				381F29B52706F9DB0074B182 /* Bundle.swift */,
+				89634B9F27EAC01B00914495 /* Color.swift */,
+				89634B9D27EABFE700914495 /* Date.swift */,
 				89634B9927E9CBDA00914495 /* String.swift */,
 				38204DC52702CAB3006A7742 /* UIApplication.swift */,
 			);
@@ -306,9 +312,11 @@
 				38C9608F2746089C000607D8 /* GridCollectionViewCell.swift in Sources */,
 				8948437C27E9A26700BE96D6 /* APIServiceManager.swift in Sources */,
 				38204DB02701ABBF006A7742 /* IndexViewController.swift in Sources */,
+				89634BA027EAC01B00914495 /* Color.swift in Sources */,
 				38204DBC2702B12C006A7742 /* BaseViewController.swift in Sources */,
 				89634B9A27E9CBDA00914495 /* String.swift in Sources */,
 				89634B9C27E9CE7000914495 /* EncryptionUtility.swift in Sources */,
+				89634B9E27EABFE700914495 /* Date.swift in Sources */,
 				38C9607F274606D4000607D8 /* SwitchGridorListViewController.swift in Sources */,
 				38204DC62702CAB3006A7742 /* UIApplication.swift in Sources */,
 			);

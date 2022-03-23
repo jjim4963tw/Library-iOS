@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class IndexViewController: BaseViewController {
     private let tableViewCellIdentifier: String = "TableViewCell"
@@ -20,6 +21,7 @@ class IndexViewController: BaseViewController {
         itemList.append("ImageLoader")
         itemList.append("FilePicker")
         itemList.append("SwitchGridorList")
+        itemList.append("FaceID")
     }
     
     override func initContentView() {
@@ -35,17 +37,22 @@ extension IndexViewController: UITableViewDelegate {
         let title = self.itemList[indexPath.row]
         
         switch (title) {
-            case "ImageLoader":
-                self.goPageFunction(storyboardName: "ImagePicker", storyboardID: "MediaPickerViewController")
-                break
-            case "FilePicker":
-                self.goPageFunction(storyboardName: "FilePicker", storyboardID: "FilePickerViewController")
-                break
-            case "SwitchGridorList":
-                self.goPageFunction(storyboardName: "GridorListView", storyboardID: "SwitchGridorListViewController")
-                break
-            default:
-                break
+        case "ImageLoader":
+            self.goPageFunction(storyboardName: "ImagePicker", storyboardID: "MediaPickerViewController")
+            break
+        case "FilePicker":
+            self.goPageFunction(storyboardName: "FilePicker", storyboardID: "FilePickerViewController")
+            break
+        case "SwitchGridorList":
+            self.goPageFunction(storyboardName: "GridorListView", storyboardID: "SwitchGridorListViewController")
+            break
+        case "FaceID":
+            let controller = UIHostingController(rootView: FaceIDViewController())
+            self.navigationController?.pushViewController(controller, animated: true)
+
+            break
+        default:
+            break
         }
     }
 }

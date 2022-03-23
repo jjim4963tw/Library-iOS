@@ -43,6 +43,8 @@
 		89634BA527EACAC300914495 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BA427EACAC300914495 /* UIImage.swift */; };
 		89634BA727EACBBC00914495 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BA627EACBBC00914495 /* UIView.swift */; };
 		89634BA927EACD5900914495 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BA827EACD5900914495 /* UINavigationBar.swift */; };
+		89634BAB27EAD0A700914495 /* FaceIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BAA27EAD0A700914495 /* FaceIDViewController.swift */; };
+		89634BAE27EAF27C00914495 /* FaceIDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89634BAD27EAF27C00914495 /* FaceIDViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		89634BA427EACAC300914495 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		89634BA627EACBBC00914495 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		89634BA827EACD5900914495 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		89634BAA27EAD0A700914495 /* FaceIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDViewController.swift; sourceTree = "<group>"; };
+		89634BAD27EAF27C00914495 /* FaceIDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				8948437A27E9A25300BE96D6 /* Manager */,
 				38204DC12702C041006A7742 /* Utility */,
 				38204DAD2701AA8C006A7742 /* Resource */,
+				89634BAC27EAF25400914495 /* ViewModel */,
 			);
 			path = "Library-iOS";
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				38204DD22703003F006A7742 /* FilePickerViewController.swift */,
 				38204DBD2702B810006A7742 /* MediaPickerViewController.swift */,
 				38C9607E274606D4000607D8 /* SwitchGridorListViewController.swift */,
+				89634BAA27EAD0A700914495 /* FaceIDViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +224,14 @@
 				8948437B27E9A26700BE96D6 /* APIServiceManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		89634BAC27EAF25400914495 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89634BAD27EAF27C00914495 /* FaceIDViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +338,11 @@
 				8948437C27E9A26700BE96D6 /* APIServiceManager.swift in Sources */,
 				38204DB02701ABBF006A7742 /* IndexViewController.swift in Sources */,
 				89634BA027EAC01B00914495 /* Color.swift in Sources */,
+				89634BAB27EAD0A700914495 /* FaceIDViewController.swift in Sources */,
 				38204DBC2702B12C006A7742 /* BaseViewController.swift in Sources */,
 				89634BA927EACD5900914495 /* UINavigationBar.swift in Sources */,
 				89634B9A27E9CBDA00914495 /* String.swift in Sources */,
+				89634BAE27EAF27C00914495 /* FaceIDViewModel.swift in Sources */,
 				89634B9C27E9CE7000914495 /* EncryptionUtility.swift in Sources */,
 				89634B9E27EABFE700914495 /* Date.swift in Sources */,
 				38C9607F274606D4000607D8 /* SwitchGridorListViewController.swift in Sources */,
@@ -490,7 +506,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WSUYW9VDV;
+				DEVELOPMENT_TEAM = C7ZY9GQL2C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Library-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -518,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WSUYW9VDV;
+				DEVELOPMENT_TEAM = C7ZY9GQL2C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Library-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

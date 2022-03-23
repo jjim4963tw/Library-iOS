@@ -23,5 +23,7 @@
 	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Access Media</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Use Face ID to unlock your app</string>
 </dict>
 </plist>

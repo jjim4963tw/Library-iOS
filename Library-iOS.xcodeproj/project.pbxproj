@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8944886627F471DC002CB2CD /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 8944886527F471DC002CB2CD /* AFNetworking */; };
 		8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B88127F453EF000C1770 /* Library_iOS.swift */; };
 		8944B88627F453F1000C1770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944B88527F453F1000C1770 /* Assets.xcassets */; };
 		8944B88927F453F1000C1770 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944B88827F453F1000C1770 /* Preview Assets.xcassets */; };
@@ -18,8 +19,20 @@
 		8944B8B127F45749000C1770 /* FilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8B027F45749000C1770 /* FilePickerView.swift */; };
 		8944B8B527F45BC7000C1770 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8B427F45BC7000C1770 /* DocumentPicker.swift */; };
 		8944B8B827F467DD000C1770 /* SharePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8B727F467DD000C1770 /* SharePicker.swift */; };
-		8944B8BB27F46999000C1770 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8BA27F46999000C1770 /* Bundle.swift */; };
 		8944B8BD27F46B2D000C1770 /* DocumentInteractionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8BC27F46B2D000C1770 /* DocumentInteractionPicker.swift */; };
+		8944B8CD27F4702D000C1770 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8C427F4702D000C1770 /* Date.swift */; };
+		8944B8CE27F4702D000C1770 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8C527F4702D000C1770 /* UIView.swift */; };
+		8944B8CF27F4702D000C1770 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8C627F4702D000C1770 /* Array.swift */; };
+		8944B8D027F4702D000C1770 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8C727F4702D000C1770 /* String.swift */; };
+		8944B8D127F4702D000C1770 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8C827F4702D000C1770 /* UIImage.swift */; };
+		8944B8D227F4702D000C1770 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8C927F4702D000C1770 /* UINavigationBar.swift */; };
+		8944B8D327F4702D000C1770 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8CA27F4702D000C1770 /* UIApplication.swift */; };
+		8944B8D427F4702D000C1770 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8CB27F4702D000C1770 /* Bundle.swift */; };
+		8944B8D527F4702D000C1770 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8CC27F4702D000C1770 /* Color.swift */; };
+		8944B8D827F47035000C1770 /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8D727F47035000C1770 /* APIServiceManager.swift */; };
+		8944B8E627F47051000C1770 /* EncryptionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8E427F47051000C1770 /* EncryptionUtility.swift */; };
+		8944B8E727F47051000C1770 /* AlertControllerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8E527F47051000C1770 /* AlertControllerUtility.swift */; };
+		8944B8EA27F4708C000C1770 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8944B8E927F4708C000C1770 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +67,19 @@
 		8944B8B027F45749000C1770 /* FilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerView.swift; sourceTree = "<group>"; };
 		8944B8B427F45BC7000C1770 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		8944B8B727F467DD000C1770 /* SharePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePicker.swift; sourceTree = "<group>"; };
-		8944B8BA27F46999000C1770 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		8944B8BC27F46B2D000C1770 /* DocumentInteractionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInteractionPicker.swift; sourceTree = "<group>"; };
+		8944B8C427F4702D000C1770 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		8944B8C527F4702D000C1770 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8944B8C627F4702D000C1770 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		8944B8C727F4702D000C1770 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8944B8C827F4702D000C1770 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		8944B8C927F4702D000C1770 /* UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		8944B8CA27F4702D000C1770 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		8944B8CB27F4702D000C1770 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		8944B8CC27F4702D000C1770 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8944B8D727F47035000C1770 /* APIServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceManager.swift; sourceTree = "<group>"; };
+		8944B8E427F47051000C1770 /* EncryptionUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionUtility.swift; sourceTree = "<group>"; };
+		8944B8E527F47051000C1770 /* AlertControllerUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8944B8EA27F4708C000C1770 /* Alamofire in Frameworks */,
+				8944886627F471DC002CB2CD /* AFNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +134,11 @@
 			children = (
 				8944B88127F453EF000C1770 /* Library_iOS.swift */,
 				8944B88527F453F1000C1770 /* Assets.xcassets */,
+				8944B8C327F4702D000C1770 /* Extension */,
+				8944B8D627F47035000C1770 /* Manager */,
+				8944B8D927F4703D000C1770 /* Resource */,
+				8944B8E327F47051000C1770 /* Utility */,
 				8944B8AB27F4549D000C1770 /* View */,
-				8944B8B927F4698B000C1770 /* Extension */,
 				8944B88727F453F1000C1770 /* Preview Content */,
 			);
 			path = "Library-iOS";
@@ -143,6 +172,7 @@
 		8944B8AB27F4549D000C1770 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8944B8C027F46FE2000C1770 /* Old */,
 				8944B8B627F465C9000C1770 /* Component */,
 				8944B8AC27F454BD000C1770 /* FaceIDView.swift */,
 				8944B8B027F45749000C1770 /* FilePickerView.swift */,
@@ -161,12 +191,51 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		8944B8B927F4698B000C1770 /* Extension */ = {
+		8944B8C027F46FE2000C1770 /* Old */ = {
 			isa = PBXGroup;
 			children = (
-				8944B8BA27F46999000C1770 /* Bundle.swift */,
+			);
+			path = Old;
+			sourceTree = "<group>";
+		};
+		8944B8C327F4702D000C1770 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8944B8C427F4702D000C1770 /* Date.swift */,
+				8944B8C527F4702D000C1770 /* UIView.swift */,
+				8944B8C627F4702D000C1770 /* Array.swift */,
+				8944B8C727F4702D000C1770 /* String.swift */,
+				8944B8C827F4702D000C1770 /* UIImage.swift */,
+				8944B8C927F4702D000C1770 /* UINavigationBar.swift */,
+				8944B8CA27F4702D000C1770 /* UIApplication.swift */,
+				8944B8CB27F4702D000C1770 /* Bundle.swift */,
+				8944B8CC27F4702D000C1770 /* Color.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		8944B8D627F47035000C1770 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8944B8D727F47035000C1770 /* APIServiceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8944B8D927F4703D000C1770 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8944B8E327F47051000C1770 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8944B8E427F47051000C1770 /* EncryptionUtility.swift */,
+				8944B8E527F47051000C1770 /* AlertControllerUtility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +254,10 @@
 			dependencies = (
 			);
 			name = "Library-iOS";
+			packageProductDependencies = (
+				8944B8E927F4708C000C1770 /* Alamofire */,
+				8944886527F471DC002CB2CD /* AFNetworking */,
+			);
 			productName = "Library-iOS";
 			productReference = 8944B87E27F453EF000C1770 /* Library-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -255,8 +328,13 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 8944B87527F453EF000C1770;
+			packageReferences = (
+				8944B8E827F4708C000C1770 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8944886427F471DC002CB2CD /* XCRemoteSwiftPackageReference "AFNetworking" */,
+			);
 			productRefGroup = 8944B87F27F453EF000C1770 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,12 +378,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8944B8B127F45749000C1770 /* FilePickerView.swift in Sources */,
-				8944B8BB27F46999000C1770 /* Bundle.swift in Sources */,
+				8944B8D227F4702D000C1770 /* UINavigationBar.swift in Sources */,
+				8944B8E727F47051000C1770 /* AlertControllerUtility.swift in Sources */,
+				8944B8D027F4702D000C1770 /* String.swift in Sources */,
+				8944B8D827F47035000C1770 /* APIServiceManager.swift in Sources */,
+				8944B8CF27F4702D000C1770 /* Array.swift in Sources */,
 				8944B8B827F467DD000C1770 /* SharePicker.swift in Sources */,
+				8944B8D527F4702D000C1770 /* Color.swift in Sources */,
 				8944B8AF27F454BD000C1770 /* IndexView.swift in Sources */,
+				8944B8CD27F4702D000C1770 /* Date.swift in Sources */,
 				8944B8AE27F454BD000C1770 /* FaceIDView.swift in Sources */,
+				8944B8D327F4702D000C1770 /* UIApplication.swift in Sources */,
 				8944B8B527F45BC7000C1770 /* DocumentPicker.swift in Sources */,
 				8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */,
+				8944B8D127F4702D000C1770 /* UIImage.swift in Sources */,
+				8944B8CE27F4702D000C1770 /* UIView.swift in Sources */,
+				8944B8E627F47051000C1770 /* EncryptionUtility.swift in Sources */,
+				8944B8D427F4702D000C1770 /* Bundle.swift in Sources */,
 				8944B8BD27F46B2D000C1770 /* DocumentInteractionPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,6 +720,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8944886427F471DC002CB2CD /* XCRemoteSwiftPackageReference "AFNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AFNetworking/AFNetworking.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8944B8E827F4708C000C1770 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8944886527F471DC002CB2CD /* AFNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8944886427F471DC002CB2CD /* XCRemoteSwiftPackageReference "AFNetworking" */;
+			productName = AFNetworking;
+		};
+		8944B8E927F4708C000C1770 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8944B8E827F4708C000C1770 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8944B87627F453EF000C1770 /* Project object */;
 }

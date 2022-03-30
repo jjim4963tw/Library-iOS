@@ -8,7 +8,7 @@
 import SwiftUI
 import LocalAuthentication
 
-struct FaceIDViewController: View {
+struct FaceIDView: View {
     /// @StateObject：保證對象只會被創建一次(Singleton)，在View中創建 viewmodel 推薦用此。
     /// @ObservableObject：會隨著View的創建被重複創建。
     @StateObject private var viewModel: FaceIDViewModel
@@ -30,13 +30,13 @@ struct FaceIDViewController: View {
     }        
 }
 
-struct FaceIDViewController_Previews: PreviewProvider {
+struct FaceIDView_Previews: PreviewProvider {
     static var previews: some View {
-        FaceIDViewController()
+        FaceIDView()
     }
 }
 
-extension FaceIDViewController {
+extension FaceIDView {
     @MainActor class FaceIDViewModel: ObservableObject {
         /// @Published：允許創建出能夠被自動觀察的對象屬性，如此參數發生改變，會自動修改該屬性綁定的UI 元件。
         @Published var buttonText: String = "Using Face ID"

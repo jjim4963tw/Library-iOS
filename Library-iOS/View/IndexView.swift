@@ -23,7 +23,7 @@ struct IndexView: View {
                     Text(content)
                 }
             case "FilePicker":
-                NavigationLink(destination: Text("Show Detail Here...")) {
+                NavigationLink(destination: FilePickerView()) {
                     Text(content)
                 }
             case "SwitchGridorList":
@@ -31,7 +31,7 @@ struct IndexView: View {
                     Text(content)
                 }
             case "FaceID":
-                NavigationLink(destination: FaceIDViewController()) {
+                NavigationLink(destination: FaceIDView()) {
                     Text(content)
                 }
             default:

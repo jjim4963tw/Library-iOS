@@ -15,6 +15,11 @@
 		8944B89F27F453F2000C1770 /* Library_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B89E27F453F2000C1770 /* Library_iOSUITestsLaunchTests.swift */; };
 		8944B8AE27F454BD000C1770 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8AC27F454BD000C1770 /* FaceIDView.swift */; };
 		8944B8AF27F454BD000C1770 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8AD27F454BD000C1770 /* IndexView.swift */; };
+		8944B8B127F45749000C1770 /* FilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8B027F45749000C1770 /* FilePickerView.swift */; };
+		8944B8B527F45BC7000C1770 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8B427F45BC7000C1770 /* DocumentPicker.swift */; };
+		8944B8B827F467DD000C1770 /* SharePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8B727F467DD000C1770 /* SharePicker.swift */; };
+		8944B8BB27F46999000C1770 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8BA27F46999000C1770 /* Bundle.swift */; };
+		8944B8BD27F46B2D000C1770 /* DocumentInteractionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B8BC27F46B2D000C1770 /* DocumentInteractionPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		8944B89E27F453F2000C1770 /* Library_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8944B8AC27F454BD000C1770 /* FaceIDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
 		8944B8AD27F454BD000C1770 /* IndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		8944B8B027F45749000C1770 /* FilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerView.swift; sourceTree = "<group>"; };
+		8944B8B427F45BC7000C1770 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		8944B8B727F467DD000C1770 /* SharePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePicker.swift; sourceTree = "<group>"; };
+		8944B8BA27F46999000C1770 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		8944B8BC27F46B2D000C1770 /* DocumentInteractionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInteractionPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				8944B88127F453EF000C1770 /* Library_iOS.swift */,
-				8944B8AB27F4549D000C1770 /* View */,
 				8944B88527F453F1000C1770 /* Assets.xcassets */,
+				8944B8AB27F4549D000C1770 /* View */,
+				8944B8B927F4698B000C1770 /* Extension */,
 				8944B88727F453F1000C1770 /* Preview Content */,
 			);
 			path = "Library-iOS";
@@ -132,10 +143,30 @@
 		8944B8AB27F4549D000C1770 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8944B8B627F465C9000C1770 /* Component */,
 				8944B8AC27F454BD000C1770 /* FaceIDView.swift */,
+				8944B8B027F45749000C1770 /* FilePickerView.swift */,
 				8944B8AD27F454BD000C1770 /* IndexView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8944B8B627F465C9000C1770 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8944B8BC27F46B2D000C1770 /* DocumentInteractionPicker.swift */,
+				8944B8B427F45BC7000C1770 /* DocumentPicker.swift */,
+				8944B8B727F467DD000C1770 /* SharePicker.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8944B8B927F4698B000C1770 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8944B8BA27F46999000C1770 /* Bundle.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8944B8B127F45749000C1770 /* FilePickerView.swift in Sources */,
+				8944B8BB27F46999000C1770 /* Bundle.swift in Sources */,
+				8944B8B827F467DD000C1770 /* SharePicker.swift in Sources */,
 				8944B8AF27F454BD000C1770 /* IndexView.swift in Sources */,
 				8944B8AE27F454BD000C1770 /* FaceIDView.swift in Sources */,
+				8944B8B527F45BC7000C1770 /* DocumentPicker.swift in Sources */,
 				8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */,
+				8944B8BD27F46B2D000C1770 /* DocumentInteractionPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

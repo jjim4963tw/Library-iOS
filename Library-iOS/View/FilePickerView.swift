@@ -41,7 +41,7 @@ struct FilePickerView: View {
             Button("Document Interaction") {
                 self.viewModel.showInteractionPicker.toggle()
             }.background(
-                DocumentInteractionPicker($viewModel.showInteractionPicker, url: Bundle.main.url(forResource: "info", withExtension: "plist")!)
+                DocumentInteractionPicker($viewModel.showInteractionPicker, url: Bundle.main.url(forResource: "config", withExtension: "plist")!)
             )
             .padding()
             .foregroundColor(.blue)

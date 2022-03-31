@@ -18,4 +18,14 @@ extension Bundle {
         }
         return nil
     }
+    
+    public func getPlist(name: String) -> [String: AnyObject]? {
+        guard let path = self.path(forResource: name, ofType: "plist") else { return nil }
+        let url = URL(fileURLWithPath: path)
+        let data = try! Data(contentsOf: url, options: .mappedIfSafe)
+        
+        guard let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil) as? [String: AnyObject] else { return nil }
+
+        return plist
+    }
 }

@@ -16,7 +16,6 @@ struct IndexView: View {
     
     var body: some View {
         List(self.viewModel.itemList, id: \.self) { content in
-            
             switch content {
             case "ImageLoader":
                 NavigationLink(destination: Text("Show Detail Here...")) {
@@ -24,10 +23,6 @@ struct IndexView: View {
                 }
             case "FilePicker":
                 NavigationLink(destination: FilePickerView()) {
-                    Text(content)
-                }
-            case "SwitchGridorList":
-                NavigationLink(destination: Text("Show Detail Here...")) {
                     Text(content)
                 }
             case "FaceID":
@@ -56,12 +51,11 @@ extension IndexView {
         @Published var itemList: Array<String> = [String]()
 
         init() {
-            self.itemList = [
-                "ImageLoader",
-                "FilePicker",
-                "SwitchGridorList",
-                "FaceID",
-            ]
+            if let configDic = Bundle.main.getPlist(name: "config") {
+                if let indexInfo = configDic["index_info"] as? [String] {
+                    self.itemList = indexInfo
+                }
+            }
         }
     }
 }

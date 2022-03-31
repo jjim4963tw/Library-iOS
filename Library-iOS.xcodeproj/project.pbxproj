@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8944886627F471DC002CB2CD /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 8944886527F471DC002CB2CD /* AFNetworking */; };
+		8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */; };
+		8944886A27F5506B002CB2CD /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8944886927F5506B002CB2CD /* config.plist */; };
 		8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B88127F453EF000C1770 /* Library_iOS.swift */; };
 		8944B88627F453F1000C1770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944B88527F453F1000C1770 /* Assets.xcassets */; };
 		8944B88927F453F1000C1770 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944B88827F453F1000C1770 /* Preview Assets.xcassets */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchGridorListViewController.swift; sourceTree = "<group>"; };
+		8944886927F5506B002CB2CD /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		8944B87E27F453EF000C1770 /* Library-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8944B88127F453EF000C1770 /* Library_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library_iOS.swift; sourceTree = "<group>"; };
 		8944B88527F453F1000C1770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				8944B88127F453EF000C1770 /* Library_iOS.swift */,
-				8944B88527F453F1000C1770 /* Assets.xcassets */,
 				8944B8C327F4702D000C1770 /* Extension */,
 				8944B8D627F47035000C1770 /* Manager */,
 				8944B8D927F4703D000C1770 /* Resource */,
@@ -194,6 +197,7 @@
 		8944B8C027F46FE2000C1770 /* Old */ = {
 			isa = PBXGroup;
 			children = (
+				8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */,
 			);
 			path = Old;
 			sourceTree = "<group>";
@@ -201,15 +205,15 @@
 		8944B8C327F4702D000C1770 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8944B8C427F4702D000C1770 /* Date.swift */,
-				8944B8C527F4702D000C1770 /* UIView.swift */,
 				8944B8C627F4702D000C1770 /* Array.swift */,
-				8944B8C727F4702D000C1770 /* String.swift */,
-				8944B8C827F4702D000C1770 /* UIImage.swift */,
-				8944B8C927F4702D000C1770 /* UINavigationBar.swift */,
-				8944B8CA27F4702D000C1770 /* UIApplication.swift */,
 				8944B8CB27F4702D000C1770 /* Bundle.swift */,
 				8944B8CC27F4702D000C1770 /* Color.swift */,
+				8944B8C427F4702D000C1770 /* Date.swift */,
+				8944B8C727F4702D000C1770 /* String.swift */,
+				8944B8CA27F4702D000C1770 /* UIApplication.swift */,
+				8944B8C827F4702D000C1770 /* UIImage.swift */,
+				8944B8C927F4702D000C1770 /* UINavigationBar.swift */,
+				8944B8C527F4702D000C1770 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -225,6 +229,8 @@
 		8944B8D927F4703D000C1770 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				8944B88527F453F1000C1770 /* Assets.xcassets */,
+				8944886927F5506B002CB2CD /* config.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -232,8 +238,8 @@
 		8944B8E327F47051000C1770 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				8944B8E427F47051000C1770 /* EncryptionUtility.swift */,
 				8944B8E527F47051000C1770 /* AlertControllerUtility.swift */,
+				8944B8E427F47051000C1770 /* EncryptionUtility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 			files = (
 				8944B88927F453F1000C1770 /* Preview Assets.xcassets in Resources */,
 				8944B88627F453F1000C1770 /* Assets.xcassets in Resources */,
+				8944886A27F5506B002CB2CD /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +399,7 @@
 				8944B8B527F45BC7000C1770 /* DocumentPicker.swift in Sources */,
 				8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */,
 				8944B8D127F4702D000C1770 /* UIImage.swift in Sources */,
+				8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */,
 				8944B8CE27F4702D000C1770 /* UIView.swift in Sources */,
 				8944B8E627F47051000C1770 /* EncryptionUtility.swift in Sources */,
 				8944B8D427F4702D000C1770 /* Bundle.swift in Sources */,

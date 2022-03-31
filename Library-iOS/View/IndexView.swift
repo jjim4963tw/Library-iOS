@@ -18,7 +18,7 @@ struct IndexView: View {
         List(self.viewModel.itemList, id: \.self) { content in
             switch content {
             case "ImageLoader":
-                NavigationLink(destination: Text("Show Detail Here...")) {
+                NavigationLink(destination: ImagePickerView()) {
                     Text(content)
                 }
             case "FilePicker":

@@ -10,6 +10,8 @@
 		8944886627F471DC002CB2CD /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 8944886527F471DC002CB2CD /* AFNetworking */; };
 		8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */; };
 		8944886A27F5506B002CB2CD /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8944886927F5506B002CB2CD /* config.plist */; };
+		8944886E27F5784F002CB2CD /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886D27F5784F002CB2CD /* ImagePickerView.swift */; };
+		8944887027F578B7002CB2CD /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886F27F578B7002CB2CD /* PhotoPicker.swift */; };
 		8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944B88127F453EF000C1770 /* Library_iOS.swift */; };
 		8944B88627F453F1000C1770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944B88527F453F1000C1770 /* Assets.xcassets */; };
 		8944B88927F453F1000C1770 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8944B88827F453F1000C1770 /* Preview Assets.xcassets */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchGridorListViewController.swift; sourceTree = "<group>"; };
 		8944886927F5506B002CB2CD /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		8944886D27F5784F002CB2CD /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		8944886F27F578B7002CB2CD /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		8944B87E27F453EF000C1770 /* Library-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Library-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8944B88127F453EF000C1770 /* Library_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library_iOS.swift; sourceTree = "<group>"; };
 		8944B88527F453F1000C1770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				8944B8AC27F454BD000C1770 /* FaceIDView.swift */,
 				8944B8B027F45749000C1770 /* FilePickerView.swift */,
 				8944B8AD27F454BD000C1770 /* IndexView.swift */,
+				8944886D27F5784F002CB2CD /* ImagePickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			children = (
 				8944B8BC27F46B2D000C1770 /* DocumentInteractionPicker.swift */,
 				8944B8B427F45BC7000C1770 /* DocumentPicker.swift */,
+				8944886F27F578B7002CB2CD /* PhotoPicker.swift */,
 				8944B8B727F467DD000C1770 /* SharePicker.swift */,
 			);
 			path = Component;
@@ -388,8 +394,10 @@
 				8944B8D227F4702D000C1770 /* UINavigationBar.swift in Sources */,
 				8944B8E727F47051000C1770 /* AlertControllerUtility.swift in Sources */,
 				8944B8D027F4702D000C1770 /* String.swift in Sources */,
+				8944886E27F5784F002CB2CD /* ImagePickerView.swift in Sources */,
 				8944B8D827F47035000C1770 /* APIServiceManager.swift in Sources */,
 				8944B8CF27F4702D000C1770 /* Array.swift in Sources */,
+				8944887027F578B7002CB2CD /* PhotoPicker.swift in Sources */,
 				8944B8B827F467DD000C1770 /* SharePicker.swift in Sources */,
 				8944B8D527F4702D000C1770 /* Color.swift in Sources */,
 				8944B8AF27F454BD000C1770 /* IndexView.swift in Sources */,
@@ -565,6 +573,7 @@
 				DEVELOPMENT_TEAM = C7ZY9GQL2C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "show image and video";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -594,6 +603,7 @@
 				DEVELOPMENT_TEAM = C7ZY9GQL2C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "show image and video";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

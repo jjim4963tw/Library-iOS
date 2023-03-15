@@ -29,6 +29,10 @@ struct IndexView: View {
                 NavigationLink(destination: FaceIDView()) {
                     Text(content)
                 }
+            case "MediaList":
+                NavigationLink(destination: MediaListView()) {
+                    Text(content)
+                }
             default:
                 NavigationLink(destination: Text("Show Detail Here...")) {
                     Text(content)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3832919829C1B97C0087CD3C /* MediaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832919729C1B97C0087CD3C /* MediaListView.swift */; };
 		8944886627F471DC002CB2CD /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 8944886527F471DC002CB2CD /* AFNetworking */; };
 		8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */; };
 		8944886A27F5506B002CB2CD /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8944886927F5506B002CB2CD /* config.plist */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3832919729C1B97C0087CD3C /* MediaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListView.swift; sourceTree = "<group>"; };
 		8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchGridorListViewController.swift; sourceTree = "<group>"; };
 		8944886927F5506B002CB2CD /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		8944886D27F5784F002CB2CD /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				8944B8B027F45749000C1770 /* FilePickerView.swift */,
 				8944B8AD27F454BD000C1770 /* IndexView.swift */,
 				8944886D27F5784F002CB2CD /* ImagePickerView.swift */,
+				3832919729C1B97C0087CD3C /* MediaListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				8944B8AF27F454BD000C1770 /* IndexView.swift in Sources */,
 				8944B8CD27F4702D000C1770 /* Date.swift in Sources */,
 				8944B8AE27F454BD000C1770 /* FaceIDView.swift in Sources */,
+				3832919829C1B97C0087CD3C /* MediaListView.swift in Sources */,
 				8944B8D327F4702D000C1770 /* UIApplication.swift in Sources */,
 				8944B8B527F45BC7000C1770 /* DocumentPicker.swift in Sources */,
 				8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */,

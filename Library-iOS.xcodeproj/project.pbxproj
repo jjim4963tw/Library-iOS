@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3832919829C1B97C0087CD3C /* MediaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832919729C1B97C0087CD3C /* MediaListView.swift */; };
 		383291DD29C40AB00087CD3C /* FileUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291DC29C40AB00087CD3C /* FileUploadView.swift */; };
+		383291EA29C4106B0087CD3C /* MediaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291E929C4106B0087CD3C /* MediaListViewModel.swift */; };
+		383291F229C414490087CD3C /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291F129C414490087CD3C /* MediaModel.swift */; };
 		8944886627F471DC002CB2CD /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 8944886527F471DC002CB2CD /* AFNetworking */; };
 		8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */; };
 		8944886A27F5506B002CB2CD /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8944886927F5506B002CB2CD /* config.plist */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		3832919729C1B97C0087CD3C /* MediaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListView.swift; sourceTree = "<group>"; };
 		383291DC29C40AB00087CD3C /* FileUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadView.swift; sourceTree = "<group>"; };
+		383291E929C4106B0087CD3C /* MediaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModel.swift; sourceTree = "<group>"; };
+		383291F129C414490087CD3C /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
 		8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchGridorListViewController.swift; sourceTree = "<group>"; };
 		8944886927F5506B002CB2CD /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		8944886D27F5784F002CB2CD /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		383291E829C410580087CD3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				383291E929C4106B0087CD3C /* MediaListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		383291F029C414300087CD3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				383291F129C414490087CD3C /* MediaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8944B87527F453EF000C1770 = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +167,11 @@
 				8944B88127F453EF000C1770 /* Library_iOS.swift */,
 				8944B8C327F4702D000C1770 /* Extension */,
 				8944B8D627F47035000C1770 /* Manager */,
-				8944B8D927F4703D000C1770 /* Resource */,
 				8944B8E327F47051000C1770 /* Utility */,
+				383291F029C414300087CD3C /* Model */,
+				383291E829C410580087CD3C /* ViewModel */,
 				8944B8AB27F4549D000C1770 /* View */,
+				8944B8D927F4703D000C1770 /* Resource */,
 				8944B88727F453F1000C1770 /* Preview Content */,
 			);
 			path = "Library-iOS";
@@ -404,8 +426,10 @@
 				8944B8D827F47035000C1770 /* APIServiceManager.swift in Sources */,
 				8944B8CF27F4702D000C1770 /* Array.swift in Sources */,
 				8944887027F578B7002CB2CD /* PhotoPicker.swift in Sources */,
+				383291EA29C4106B0087CD3C /* MediaListViewModel.swift in Sources */,
 				8944B8B827F467DD000C1770 /* SharePicker.swift in Sources */,
 				8944B8D527F4702D000C1770 /* Color.swift in Sources */,
+				383291F229C414490087CD3C /* MediaModel.swift in Sources */,
 				8944B8AF27F454BD000C1770 /* IndexView.swift in Sources */,
 				8944B8CD27F4702D000C1770 /* Date.swift in Sources */,
 				8944B8AE27F454BD000C1770 /* FaceIDView.swift in Sources */,

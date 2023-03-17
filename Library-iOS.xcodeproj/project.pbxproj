@@ -11,6 +11,7 @@
 		383291DD29C40AB00087CD3C /* FileUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291DC29C40AB00087CD3C /* FileUploadView.swift */; };
 		383291EA29C4106B0087CD3C /* MediaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291E929C4106B0087CD3C /* MediaListViewModel.swift */; };
 		383291F229C414490087CD3C /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291F129C414490087CD3C /* MediaModel.swift */; };
+		383291F429C45EB80087CD3C /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291F329C45EB80087CD3C /* MediaManager.swift */; };
 		8944886627F471DC002CB2CD /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 8944886527F471DC002CB2CD /* AFNetworking */; };
 		8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */; };
 		8944886A27F5506B002CB2CD /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8944886927F5506B002CB2CD /* config.plist */; };
@@ -65,6 +66,7 @@
 		383291DC29C40AB00087CD3C /* FileUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadView.swift; sourceTree = "<group>"; };
 		383291E929C4106B0087CD3C /* MediaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModel.swift; sourceTree = "<group>"; };
 		383291F129C414490087CD3C /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		383291F329C45EB80087CD3C /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		8944886727F54FC6002CB2CD /* SwitchGridorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchGridorListViewController.swift; sourceTree = "<group>"; };
 		8944886927F5506B002CB2CD /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		8944886D27F5784F002CB2CD /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				8944B8D727F47035000C1770 /* APIServiceManager.swift */,
+				383291F329C45EB80087CD3C /* MediaManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				8944B88227F453EF000C1770 /* Library_iOS.swift in Sources */,
 				8944B8D127F4702D000C1770 /* UIImage.swift in Sources */,
 				8944886827F54FC6002CB2CD /* SwitchGridorListViewController.swift in Sources */,
+				383291F429C45EB80087CD3C /* MediaManager.swift in Sources */,
 				8944B8CE27F4702D000C1770 /* UIView.swift in Sources */,
 				8944B8E627F47051000C1770 /* EncryptionUtility.swift in Sources */,
 				8944B8D427F4702D000C1770 /* Bundle.swift in Sources */,

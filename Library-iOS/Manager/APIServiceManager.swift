@@ -25,7 +25,7 @@ struct ResponseType {
 
 class APIServiceManager: NSObject {
     private static var instance : APIServiceManager?
-        
+    
     static func shareInstance() -> APIServiceManager {
         if instance == nil {
             instance = APIServiceManager()
@@ -50,7 +50,7 @@ class APIServiceManager: NSObject {
         }
         
         let manager = AFHTTPSessionManager(baseURL: URL(string: urlString))
-
+        
         // 防止Content-Type會帶入兩次，導致錯誤
         if headers != nil && headers!["Content-Type"] != nil {
             manager.requestSerializer.setValue(headers!["Content-Type"] , forHTTPHeaderField: "Content-Type")
@@ -92,14 +92,14 @@ class APIServiceManager: NSObject {
         if queryParams != nil && queryParams!.count > 0 {
             urlString = self.mergeURLPathFunction(url: url, queryParams: queryParams!)
         }
-
+        
         let manager = AFHTTPSessionManager(sessionConfiguration: URLSessionConfiguration.default)
         
         // 實作憑證綁定
         if SSLPinning {
             self.setSSLPinningFunction(manager: manager, completion: completion)
         }
-
+        
         do {
             let request = try AFJSONRequestSerializer().request(withMethod: httpType, urlString: urlString, parameters: nil)
             request.timeoutInterval = 25
@@ -140,40 +140,49 @@ class APIServiceManager: NSObject {
             }
         }
     }
-
+    
     func connectionUsingAlamofire(url: URL, httpType: HTTPMethod = .get, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, payload: Data?, responseType: Int, responseParser: Any?, completion: ((Any?, Any?) -> Void)? = nil) {
-        if responseType == ResponseType.XML {
+        if responseType == ResponseType.XML || responseType == ResponseType.JSON {
             AF.request(url, method: httpType, parameters: parameters, headers: headers).responseData { responseData in
-                guard let xmlData = responseData.data, let stringResponse: String = String(data: xmlData, encoding: String.Encoding.utf8) else { return }
-
-                if completion != nil {
-                    completion!(stringResponse, nil)
+                switch responseData.result {
+                case .success(let result):
+                    switch responseType {
+                    case ResponseType.XML:
+                        guard let stringResponse: String = String(data: result, encoding: String.Encoding.utf8) else { return }
+                        if completion != nil {
+                            completion!(stringResponse, nil)
+                        }
+                        break
+                    case ResponseType.JSON:
+                        do {
+                            if let jsonObject = try? JSONSerialization.jsonObject(with: result, options: []),
+                               let jsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: [.prettyPrinted]),
+                               let prettyJSONString = String(data: jsonData, encoding: .utf8) {
+                                completion!(prettyJSONString, nil)
+                            }
+                        }
+                        break
+                    default:
+                        break
+                    }
+                case.failure(let error):
+                    if completion != nil {
+                        completion!(nil, error)
+                    }
+                    break
                 }
             }
-        } else if responseType == ResponseType.JSON {
-            AF.request(url, method: httpType, parameters: parameters, headers: headers).responseJSON(completionHandler: { responseJson in
-                switch responseJson.result {
-                    case .success(let jsonDic):
-                        if completion != nil {
-                            completion!(jsonDic as! NSDictionary, nil)
-                        }
-                    case .failure(let error):
-                        if completion != nil {
-                            completion!(nil, error)
-                        }
-                }
-            })
         } else {
             AF.request(url, method: httpType, parameters: parameters, headers: headers).responseString { response in
                 switch response.result {
-                    case .success(let value):
-                        if completion != nil {
-                            completion!(value, nil)
-                        }
-                    case .failure(let error):
-                        if completion != nil {
-                            completion!(nil, error)
-                        }
+                case .success(let value):
+                    if completion != nil {
+                        completion!(value, nil)
+                    }
+                case .failure(let error):
+                    if completion != nil {
+                        completion!(nil, error)
+                    }
                 }
             }
         }
@@ -183,7 +192,7 @@ class APIServiceManager: NSObject {
     //MARK: - tool function
     func mergeURLPathFunction(url: URL, queryParams: [String: Any]) -> String {
         var urlString = url.absoluteString
-
+        
         for (key, value) in queryParams {
             if value is [String] {
                 for subValue in (value as! [String]) {

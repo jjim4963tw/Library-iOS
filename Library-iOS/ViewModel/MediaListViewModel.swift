@@ -18,7 +18,7 @@ class MediaListViewModel: ObservableObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
-        let mediaList = MediaManager.getAllSystemMediaFunction()
+        let mediaList = MediaManager.manager.getAllSystemMediaFunction()
         mediaList.forEach { asset in
             var mediaModel = MediaModel()
             
@@ -33,7 +33,7 @@ class MediaListViewModel: ObservableObject {
             mediaModel.mediaType = asset.mediaType
             
             if asset.mediaType == .image {
-                MediaManager.getImageDataFunction(asset: asset) { result, imageData in
+                MediaManager.manager.getImageDataFunction(asset: asset) { result, imageData in
                     if let image = result {
                         mediaModel.image = image
                         self.mediaList.append(mediaModel)
@@ -44,7 +44,7 @@ class MediaListViewModel: ObservableObject {
                     }
                 }
             } else if asset.mediaType == .video {
-                MediaManager.getVideoDataFunction(asset: asset) { result, videoData in
+                MediaManager.manager.getVideoDataFunction(asset: asset) { result, videoData in
                     if let videoURL = result {
                         mediaModel.videoURL = videoURL
                     }

@@ -16,22 +16,21 @@ struct IndexView: View {
     
     var body: some View {
         List(self.viewModel.itemList, id: \.self) { content in
-            
             switch content {
             case "ImageLoader":
-                NavigationLink(destination: Text("Show Detail Here...")) {
+                NavigationLink(destination: ImagePickerView()) {
                     Text(content)
                 }
             case "FilePicker":
-                NavigationLink(destination: Text("Show Detail Here...")) {
-                    Text(content)
-                }
-            case "SwitchGridorList":
-                NavigationLink(destination: Text("Show Detail Here...")) {
+                NavigationLink(destination: FilePickerView()) {
                     Text(content)
                 }
             case "FaceID":
-                NavigationLink(destination: FaceIDViewController()) {
+                NavigationLink(destination: FaceIDView()) {
+                    Text(content)
+                }
+            case "MediaList":
+                NavigationLink(destination: MediaListView()) {
                     Text(content)
                 }
             default:
@@ -56,12 +55,11 @@ extension IndexView {
         @Published var itemList: Array<String> = [String]()
 
         init() {
-            self.itemList = [
-                "ImageLoader",
-                "FilePicker",
-                "SwitchGridorList",
-                "FaceID",
-            ]
+            if let configDic = Bundle.main.getPlist(name: "config") {
+                if let indexInfo = configDic["index_info"] as? [String] {
+                    self.itemList = indexInfo
+                }
+            }
         }
     }
 }

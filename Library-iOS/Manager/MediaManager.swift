@@ -99,7 +99,7 @@ class MediaManager {
                 print(outputURL)
                 do {
                     // delete temp file
-                    if FileManager.default.fileExists(atPath: outputURL.absoluteString) {
+                    if FileManager.default.fileExists(atPath: outputURL.path) {
                         try FileManager.default.removeItem(at: outputURL)
                     }
                 } catch { }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		380A54E929C99407005D73E9 /* APILibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 380A54E829C99407005D73E9 /* APILibrary */; };
+		381F9F6129CBF4DD00848827 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F9F6029CBF4DD00848827 /* FileManager.swift */; };
 		3832919829C1B97C0087CD3C /* MediaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832919729C1B97C0087CD3C /* MediaListView.swift */; };
 		383291DD29C40AB00087CD3C /* FileUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291DC29C40AB00087CD3C /* FileUploadView.swift */; };
 		383291EA29C4106B0087CD3C /* MediaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291E929C4106B0087CD3C /* MediaListViewModel.swift */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		380A54E629C957FD005D73E9 /* APILibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = APILibrary; sourceTree = "<group>"; };
+		381F9F6029CBF4DD00848827 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		3832919729C1B97C0087CD3C /* MediaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListView.swift; sourceTree = "<group>"; };
 		383291DC29C40AB00087CD3C /* FileUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadView.swift; sourceTree = "<group>"; };
 		383291E929C4106B0087CD3C /* MediaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModel.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				8944B8CB27F4702D000C1770 /* Bundle.swift */,
 				8944B8CC27F4702D000C1770 /* Color.swift */,
 				8944B8C427F4702D000C1770 /* Date.swift */,
+				381F9F6029CBF4DD00848827 /* FileManager.swift */,
 				8944B8C727F4702D000C1770 /* String.swift */,
 				8944B8CA27F4702D000C1770 /* UIApplication.swift */,
 				8944B8C827F4702D000C1770 /* UIImage.swift */,
@@ -437,6 +440,7 @@
 				8944B8B127F45749000C1770 /* FilePickerView.swift in Sources */,
 				8944B8D227F4702D000C1770 /* UINavigationBar.swift in Sources */,
 				8944B8E727F47051000C1770 /* AlertControllerUtility.swift in Sources */,
+				381F9F6129CBF4DD00848827 /* FileManager.swift in Sources */,
 				8944B8D027F4702D000C1770 /* String.swift in Sources */,
 				8944886E27F5784F002CB2CD /* ImagePickerView.swift in Sources */,
 				8944B8D827F47035000C1770 /* APIServiceManager.swift in Sources */,

@@ -24,14 +24,13 @@ extension String {
     public static func localizedWithFromat(key: String, arguments: String...) -> String {
         return String.init(format: localized(key: key), arguments: arguments)
     }
-
+    
     
     /// 刪除字串中多餘的空白
     /// - Returns: 刪除多餘空白的文案
     func removeExtraSpaces() -> String {
         return self.replacingOccurrences(of: "[\\s\n]+", with: " ", options: .regularExpression, range: nil).replacingOccurrences(of: " ", with: "")
     }
-
     
     
     /// 解析回傳回來的 URL Parameter
@@ -48,7 +47,7 @@ extension String {
             let element = pair.components(separatedBy: "=")
             let key = element[0].removingPercentEncoding
             let value = element[1].removingPercentEncoding
-
+            
             dict.updateValue(value!, forKey: key!)
         }
         

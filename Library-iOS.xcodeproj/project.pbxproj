@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380A54E929C99407005D73E9 /* APILibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 380A54E829C99407005D73E9 /* APILibrary */; };
+		381F9F6129CBF4DD00848827 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381F9F6029CBF4DD00848827 /* FileManager.swift */; };
 		3832919829C1B97C0087CD3C /* MediaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832919729C1B97C0087CD3C /* MediaListView.swift */; };
 		383291DD29C40AB00087CD3C /* FileUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291DC29C40AB00087CD3C /* FileUploadView.swift */; };
 		383291EA29C4106B0087CD3C /* MediaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383291E929C4106B0087CD3C /* MediaListViewModel.swift */; };
@@ -62,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380A54E629C957FD005D73E9 /* APILibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = APILibrary; sourceTree = "<group>"; };
+		381F9F6029CBF4DD00848827 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		3832919729C1B97C0087CD3C /* MediaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListView.swift; sourceTree = "<group>"; };
 		383291DC29C40AB00087CD3C /* FileUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadView.swift; sourceTree = "<group>"; };
 		383291E929C4106B0087CD3C /* MediaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModel.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380A54E929C99407005D73E9 /* APILibrary in Frameworks */,
 				8944B8EA27F4708C000C1770 /* Alamofire in Frameworks */,
 				8944886627F471DC002CB2CD /* AFNetworking in Frameworks */,
 			);
@@ -127,6 +132,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		380A54E729C99407005D73E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		383291E829C410580087CD3C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,10 +158,12 @@
 		8944B87527F453EF000C1770 = {
 			isa = PBXGroup;
 			children = (
+				380A54E629C957FD005D73E9 /* APILibrary */,
 				8944B88027F453EF000C1770 /* Library-iOS */,
 				8944B89127F453F1000C1770 /* Library-iOSTests */,
 				8944B89B27F453F2000C1770 /* Library-iOSUITests */,
 				8944B87F27F453EF000C1770 /* Products */,
+				380A54E729C99407005D73E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +259,7 @@
 				8944B8CB27F4702D000C1770 /* Bundle.swift */,
 				8944B8CC27F4702D000C1770 /* Color.swift */,
 				8944B8C427F4702D000C1770 /* Date.swift */,
+				381F9F6029CBF4DD00848827 /* FileManager.swift */,
 				8944B8C727F4702D000C1770 /* String.swift */,
 				8944B8CA27F4702D000C1770 /* UIApplication.swift */,
 				8944B8C827F4702D000C1770 /* UIImage.swift */,
@@ -300,6 +315,7 @@
 			packageProductDependencies = (
 				8944B8E927F4708C000C1770 /* Alamofire */,
 				8944886527F471DC002CB2CD /* AFNetworking */,
+				380A54E829C99407005D73E9 /* APILibrary */,
 			);
 			productName = "Library-iOS";
 			productReference = 8944B87E27F453EF000C1770 /* Library-iOS.app */;
@@ -424,6 +440,7 @@
 				8944B8B127F45749000C1770 /* FilePickerView.swift in Sources */,
 				8944B8D227F4702D000C1770 /* UINavigationBar.swift in Sources */,
 				8944B8E727F47051000C1770 /* AlertControllerUtility.swift in Sources */,
+				381F9F6129CBF4DD00848827 /* FileManager.swift in Sources */,
 				8944B8D027F4702D000C1770 /* String.swift in Sources */,
 				8944886E27F5784F002CB2CD /* ImagePickerView.swift in Sources */,
 				8944B8D827F47035000C1770 /* APIServiceManager.swift in Sources */,
@@ -795,6 +812,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		380A54E829C99407005D73E9 /* APILibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APILibrary;
+		};
 		8944886527F471DC002CB2CD /* AFNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8944886427F471DC002CB2CD /* XCRemoteSwiftPackageReference "AFNetworking" */;

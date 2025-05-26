@@ -56,7 +56,7 @@ extension UINavigationBar {
             if let bgImage = backgroundImage {
                 appearance.backgroundImage = bgImage
             } else if let bgColor = backgroundColor {
-                appearance.backgroundColor = backgroundColor
+                appearance.backgroundColor = bgColor
             } else {
                 appearance.backgroundColor = .white
             }
@@ -76,7 +76,7 @@ extension UINavigationBar {
                     self.setBackgroundImage(bgImage, for: .default)
                 } else if let bgColor = backgroundColor {
                     self.setBackgroundImage(nil, for: .default)
-                    self.barTintColor = backgroundColor
+                    self.barTintColor = bgColor
                 } else {
                     self.setBackgroundImage(nil, for: .default)
                     self.barTintColor = .white

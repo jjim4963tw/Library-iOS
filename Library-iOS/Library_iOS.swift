@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Library_iOS: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             NavigationView {

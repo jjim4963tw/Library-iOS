@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8944B89727F453F1000C1770"
+               BuildableName = "Library-iOSUITests.xctest"
+               BlueprintName = "Library-iOSUITests"
+               ReferencedContainer = "container:Library-iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8944B88D27F453F1000C1770"
+               BuildableName = "Library-iOSTests.xctest"
+               BlueprintName = "Library-iOSTests"
+               ReferencedContainer = "container:Library-iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

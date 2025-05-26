@@ -39,6 +39,16 @@ struct IndexView: View {
                 }
             }
         }
+        .onAppear(perform: {
+            if #available(iOS 16.1, *) {
+                LiveActivityManager.sharedInstance.createLiveActivity(accumulatedTime: 300)
+            }
+        })
+        .onDisappear(perform: {
+            if #available(iOS 16.1, *) {
+                LiveActivityManager.sharedInstance.cancelLiveActivity()
+            }
+        })
         .listStyle(.grouped)
         .navigationTitle("Library-iOS")
     }
